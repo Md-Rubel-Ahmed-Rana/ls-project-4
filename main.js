@@ -78,6 +78,7 @@
 
 
 
+
 // level-3
 
 const addName = () => {
@@ -138,9 +139,7 @@ const SendUserInfo = () => {
     const email = getInputValueById("email-field");
     const message = getInputValueById("message-field");
     const user = { name, email, message }
-    console.log(user);
 
     const stringifiedUser = JSON.stringify(user);
-    console.log(stringifiedUser);
     localStorage.setItem("user", stringifiedUser);
 }
